@@ -1,0 +1,56 @@
+:root {
+  /* Surface & Background Colors */
+  --color-bg: #f7f7f5; /* Warm Light Gray (Login BG) */
+  --color-bg-dark: #000000; /* Pitch Black (Dashboard BG) */
+  --color-surface: #ffffff; /* Panel & Card Background */
+  --color-badge: #f3f3ed; /* Soft Cream/Beige (Client Tag Badges) */
+
+  /* Borders & Shadows */
+  --color-border: #e5e5e0; /* Subtle Card & Input Border */
+  --shadow-sm: none; /* Design uses clean borders instead of heavy box-shadows */
+
+  /* Text & Typography Colors */
+  --color-text: #635151; /* Dark Charcoal Heading / Button Text */
+  --color-text-body: #222222; /* Off-Black Body Text */
+  --color-text-muted: #737373; /* Muted Slate Gray (Labels & Subtitles) */
+
+  /* Interactive Elements */
+  --color-primary: #1a1a1a; /* Main CTA Button Accent */
+  --color-primary-hover: #000000;
+  --color-danger: #dc2626; 
+  --color-success: #059669;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
+
+  /* ==========================================
+     RESPONSIVE FONT SIZES
+     clamp(MIN, PREFERRED [Viewport Base], MAX)
+     ========================================== */
+  --font-size-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);   /* ~12px - 14px (Badges/Tags) */
+  --font-size-sm: clamp(0.875rem, 0.83rem + 0.2vw, 1rem);      /* ~14px - 16px (Labels/Muted) */
+  --font-size-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);   /* ~16px - 18px (Body Text) */
+  --font-size-lg: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);     /* ~20px - 24px (H3 / Card Titles) */
+  --font-size-xl: clamp(1.6rem, 1.4rem + 1vw, 2.125rem);       /* ~25px - 34px (H2 / Section Titles) */
+  --font-size-2xl: clamp(2.25rem, 1.8rem + 2.25vw, 3.25rem);   /* ~36px - 52px (H1 / Page Titles) */
+
+  /* ==========================================
+     LINE HEIGHTS (Unitless for proportional scaling)
+     ========================================== */
+  --line-height-tight: 1.15;  /* Large display titles */
+  --line-height-snug: 1.25;   /* Section headings (H2, H3) */
+  --line-height-base: 1.5;    /* Body paragraph text */
+  --line-height-loose: 1.625; /* Small captions / dense lists */
+
+  /* Border Radius */
+  --radius: 10px; /* Slightly rounder corners matching input fields & cards */
+
+  /* Fonts */
+  --font-sans: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: 'Space Mono', 'JetBrains Mono', monospace; /* Used for overlines/tags */
+}

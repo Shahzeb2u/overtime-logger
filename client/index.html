@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overtime Logger</title>
+    <!-- SVG Favicon (Modern Browsers) -->
+    <link rel="icon" type="image/svg+xml" href="/client/images/gemini-svg.svg" />
+    <!-- Fallback / Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+   
+    <!-- Fonts Import-->
+     <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Import Plus Jakarta Sans & Space Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/client/css/style.css">
+    <link rel="stylesheet" href="/client/css/variables.css">
+</head>
+<body>
+    <!-- Login Page -->
+     <div class="lp-main">
+        <div class="lp-heading">
+            <h1>Overtime Logger</h1>
+            <span>Sign in to Continue</span>
+            <div class="lp-login-option-btns">
+                <button id="btnTeam" type="button">Team</button>
+                <button id="btnManager" type="button">Manager</button>
+
+            </div>
+        </div>
+        <div id="teamForm" class="team-form lp-forms">
+            <span>Login as Team</span>
+            <form action="POST">
+                <div class="lp-form-wrapper">
+                    <label for="email">Required *</label>
+                    <input type="email" required placeholder="Type your email">
+                    <label for="password">Required *</label>
+                    <input type="password" required minlength="8" placeholder="Type your password">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+        <div id="managerForm" class="manager-form lp-forms hidden">
+            <span>Login as Manager</span>
+            <form action="POST">
+                <div class="lp-form-wrapper">
+                    <label for="email">Required *</label>
+                    <input type="email" required placeholder="Type your email">
+                    <label for="password">Required *</label>
+                    <input type="password" required minlength="8" placeholder="Type your password">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+     </div>
+
+     <script src="/client/js/auth.js"></script>
+</body>
+</html>
