@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- SVG Favicon (Modern Browsers) -->
+    <link rel="icon" type="image/svg+xml" href="/client/images/gemini-svg.svg" />
+    <!-- Fallback / Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+   
+    <!-- Fonts Import-->
+     <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Import Plus Jakarta Sans & Space Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/client/css/style.css">
+    <link rel="stylesheet" href="/client/css/variables.css">
+    <link rel="stylesheet" href="/client/css/reset.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header-dh">
+        <div class="logo-dh">
+            <span class="logo-txt-dh">Overtime Logger</span>
+            <span class="team-logo-dh">Team</span>
+        </div>
+        <div class="header-cta-dh">
+            <span class="uname-cta-dh">Shahzeb</span>
+            <button class="btn-cta-header" type="button">Log Out</button>
+        </div>
+    </div>
+    <!-- Main -->
+     <div class="main-dsh">
+        <div class="log-ot-form-wrapper">
+            <h2 class="log-ot-heading">Log Overtime</h2>
+            <form action="submit" method="post">
+                <div class="log-ot-form-contaier">
+                    <div class="date form-input-wrapper">
+                        <label for="date">Date</label>
+                        <input type="date" name="" id="">
+                    </div>
+                    <div class="hours form-input-wrapper">
+                        <label for="number">Hours</label>
+                        <input type="number">
+                    </div>
+                    <div class="client form-input-wrapper">
+                        <label for="text">Client/Project</label>
+                        <input type="text">
+                    </div>
+                    <div class="task-type form-input-wrapper">
+                        <label for="text">Task Type</label>
+                        <input type="text">
+                    </div>
+                    <div class="desc form-input-wrapper">
+                        <label for="textarea">Description</label>
+                        <textarea name="" id="member-message"></textarea>
+                    </div>
+                    <div class="log-ot-action-buttons">
+                       <button class="log-ot-ac-btn submit-ot" type="submit">Add Entry</button>
+                       <button class="log-ot-ac-btn clear-ot" type="reset">Clear</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+     </div>
+    
+</body>
+</html>

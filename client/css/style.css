@@ -149,3 +149,140 @@ input[type="email"]:user-invalid:focus {
     margin-top: var(--space-4);
     cursor: pointer;
 }
+
+
+/* *********************************
+*********************************
+*************DASHBOARD CSS****
+****************************
+*********************** */
+.header-dh{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-block: var(--space-4);
+  padding-inline: var(--space-5);
+  background: var(--color-bg);
+  font-family: var(--font-sans);
+}
+.logo-dh{
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+  font-family: var(--font-sans);
+}
+.logo-txt-dh{
+  font-size: var(--font-size-lg);
+  color: var(--color-text);
+  font-weight: 600;
+  font-family: var(--font-sans);
+}
+.team-logo-dh{
+  border: 1px solid var(--color-border);
+  padding: 3px 12px;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 4px var(--color-border);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  color: var(--color-text-body);
+  font-family: var(--font-sans);
+}
+.header-cta-dh{
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+  font-family: var(--font-mono);
+
+}
+.uname-cta-dh{
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  font-size: var(--font-size-base);
+  font-weight: 550;
+}
+.btn-cta-header{
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  font-family: var(--font-sans);
+  padding: 8px 18px;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius);
+  /* background-color: var(--); */
+  cursor: pointer;
+}
+.main-dsh{
+  min-height: 400px;
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.log-ot-form-wrapper{
+  max-width: 1020px;
+  width: 100%;
+  border-radius: var(--radius);
+  background: var(--color-bg);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+.log-ot-heading{
+  font-size: var(--font-size-lg);
+  color: var(--color-text-body);
+  font-family: var(--font-sans);
+  font-weight: 700;
+}
+.log-ot-form-contaier{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: space-between;
+}
+.form-input-wrapper{
+  max-width: 48%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.log-ot-form-contaier input , .log-ot-form-contaier textarea{
+  padding: 12px 24px;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size: var(--font-size-base);
+  font-family: var(--font-mono);
+}
+.log-ot-form-contaier textarea{
+  height: 120px;
+  resize: none;
+}
+.form-input-wrapper.desc{
+  max-width: 100%;
+}
+.log-ot-action-buttons{
+  display: flex;
+  gap: 20px;
+}
+.log-ot-ac-btn{
+  font-size: var(--font-size-base);
+  font-size: var(--font-mono);
+  padding: 12px 24px;
+  color: var(--color-text);
+  border-radius: var(--radius);
+  font-weight: 500;
+  cursor: pointer;
+}
+.submit-ot{
+  background: var(--color-primary);
+  color: var(--color-surface);
+}
+.clear-ot{
+  background-color: var(--color-surface);
+  border: 2px solid var(--color-border);
+}
